@@ -345,7 +345,7 @@ class ImageHelper {
 	 */
 	public static function get_sideloaded_file_loc( $file ) {
 		$upload = wp_upload_dir();
-		$dir = $upload['path'];
+		$dir = $upload['url'];
 		$filename = $file;
 		$file = parse_url($file);
 		$path_parts = pathinfo($file['path']);
